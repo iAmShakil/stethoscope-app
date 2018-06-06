@@ -134,3 +134,15 @@ practices:
       win32: |
         1. Open [Windows Update](ms-settings:windowsupdate) in the Settings.
         1. Click "Restart now"
+
+  requiredApplications:
+    title:
+      PASS: Required applications are installed
+      FAIL: Required applications need to be installed
+    description: >
+      Certain applications are required on your device.
+    directions:
+        darwin: |
+          1. Install each required application:
+        win32: |
+          1. Install each required application:
