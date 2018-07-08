@@ -110,10 +110,10 @@ class Device extends Component {
               <a className={`device-info-toggle ${this.state.showInfo ? 'open' : 'closed'}`} onClick={this.toggleInfo}>&#9660;</a>
             </Accessible>
           </header>
-
-          <h2> Medium Profile Checklist - Laptops </h2>
           
           {deviceInfo}
+
+          <h2> Medium Profile Checklist - Laptops </h2>
 
           <div className='action-list'>
             <ul>
