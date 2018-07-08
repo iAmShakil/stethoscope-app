@@ -128,6 +128,7 @@
     "chai-http": "^4.0.0",
     "electron": "^1.8.4",
     "electron-builder": "^20.8.1",
+    "electron-react-devtools": "^0.5.3",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "mocha": "^5.2.0",
