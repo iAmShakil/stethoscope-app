@@ -4,24 +4,6 @@ import Action from './Action'
 import ActionIcon from './ActionIcon'
 import './Device.css'
 
-const deviceMessages = {
-  ok: <span>
-    <ActionIcon className='action-icon' width='35px' height='35px' name='checkmark' color='#bbd8ca' />
-    <span>This device is properly configured.</span>
-  </span>,
-  warning: <span>
-    <span>
-      The security settings on this device could be improved.
-      Click the arrow next to each recommendation for instructions.
-    </span>
-  </span>,
-  critical: <span>
-    <span>
-      The security settings on this device should be improved.
-      Click the arrow next to each recommendation for instructions.
-    </span>
-  </span>
-}
 
 class Device extends Component {
   constructor (props) {
@@ -128,14 +110,10 @@ class Device extends Component {
               <a className={`device-info-toggle ${this.state.showInfo ? 'open' : 'closed'}`} onClick={this.toggleInfo}>&#9660;</a>
             </Accessible>
           </header>
-
+          
           {deviceInfo}
 
-          <div className={`panel device-summary ${deviceClass}`}>
-            {deviceMessages[deviceClass]}
-          </div>
-
-          <h4>{org} baseline policy</h4>
+          <h2> Medium Profile Checklist - Laptops </h2>
 
           <div className='action-list'>
             <ul>
