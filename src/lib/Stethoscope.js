@@ -60,11 +60,9 @@ export default class Stethoscope {
         validate(policy: $policy) {
           status
           osVersion
-          firewall
           diskEncryption
           screenLock
           automaticUpdates
-          remoteLogin
           stethoscopeVersion
 
           requiredApplications {
@@ -104,14 +102,12 @@ export default class Stethoscope {
         }
 
         security {
-          firewall
           publicFirewall
           privateFirewall
           domainFirewall
           automaticUpdates
           diskEncryption
           screenLock
-          remoteLogin
           automaticAppUpdates
           automaticSecurityUpdates
           automaticOsUpdates
